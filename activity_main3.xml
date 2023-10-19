@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg03"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="530dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginLeft="166dp"
+        android:layout_marginEnd="187dp"
+        android:layout_marginRight="187dp"
+        android:layout_marginBottom="768dp"
+        android:background="#C6FAF5F3"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:textColor="#101010"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="548dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="239dp"
+        android:layout_marginRight="239dp"
+        android:background="#86FFFFFF"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="Count The Memories           Not The Calories!!"
+        android:textColor="#E91E63"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="527dp"
+        android:layout_height="327dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="#BFFFFFFF"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:onClick="addOnCLick"
+            android:text="add order"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:backgroundTint="#BFFFFFFF" />
+
+        <Button
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="#BFFFFFFF"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:onClick="viewOnClick"
+            android:text="view my order"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:backgroundTint="#BFFFFFFF" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="#BFFFFFFF"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:onClick="updateOnClick"
+            android:text="update my order"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:backgroundTint="#BFFFFFFF" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="#BFFFFFFF"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:onClick="deleteOnClick"
+            android:text="delete my order"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:backgroundTint="#BFFFFFFF" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="209dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="copyright © 2021"
+        android:textColor="#FFF7F7"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="185dp"
+        android:layout_height="53dp"
+        android:background="#FB0808"
+        android:fontFamily="cursive"
+        android:text="LOG OUT"
+        android:textColor="#FFFDFE"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:backgroundTint="#FB0808"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
